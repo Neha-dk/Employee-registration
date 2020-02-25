@@ -1,0 +1,29 @@
+body .Form-class
+{
+    background-color: #d3d3d3;
+
+}
+.Form-class
+{
+    margin : 30px 30px;
+    padding: 10px;
+}
+.Form-class .fields
+{
+    margin-top: 5px;
+  
+}
+.Form-class select
+{
+    margin-top: 2PX;
+    margin-bottom: 6px;
+}
+.submit
+{
+    background-color: #003399;
+}
+
+.cancel .History
+{
+    background-color : #a9a9a9 ;
+}
