@@ -6,30 +6,33 @@
     <link rel="stylesheet" type="text/css" href="table_style.css">
 </head>
 
-<body>
+<body onload="loadDoc()">
     <div class="Head">
         <h1> Employee Registration</h1>
     </div>
-    <form action="" method="POST">
-    <!-- <form> -->
+    <!-- <form action="" method="POST"> -->
+    <form >
         <div class="form-class">
 
             <div class="Fields"><label>First Name</label><br></div>
-            <input type="text" name="FN"><br>
+            <input type="text" name="FirstName"><br>
             <div class="Fields"><label>Last Name</label><br></div>
-            <input type="text" name="LN"><br>
+            <input type="text" name="LastName"><br>
             <div class="Fields"><label>Mail ID</label><br></div>
-            <input type="text" name="email"><br>
+            <input type="text" name="Email"><br>
             <div class="Fields"><label>Password</label><br></div>
-            <input type="password" name="pswd"><br>
+            <input type="password" name="Password"><br>
+            <div class="Fields"><label>Mail ID</label><br></div>
+            <input type="date" name="Dob">
+           
             <div class="GenderClass">
                 <div class="Fields"><label>Gender</label><br></div>
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="Gender" value="male">Male
+                <input type="radio" name="Gender" value="female">Female<br>
             </div>
             <div class="Fields"><label>Country</label><br></div>
             <div class="country-class">
-                <select class="Country">
+                <select name="Country">
                     <option value="India">India</option>
                     <option value="Sri Lanka">Sri Lanka</option>
                     <option value="China">China</option>
@@ -39,15 +42,13 @@
             </div>
             <div class="Fields"><label>State</label><br></div>
             <div class="state-class">
-                <select class="State">
+                <select name="State">
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Tamilnadu">Tamilnadu</option>
                     <option value="Delhi">Delhi</option>
 
                 </select><br>
             </div>
-            <div class="Fields"><label>Mobile Number</label><br></div>
-            <input type="text" name="mobile"><br>
             <div class="hobbies-class">
                 <div class="Fields"><label>Hobbies</label><br></div>
                 <input id="1" type="checkbox" name="Hobbies" value="Singing"> Singing<br>
@@ -59,9 +60,8 @@
             <textarea name="Address">Where is your House</textarea><br>
             <div class="submission-class" align="right">
                 <button class="Cancel">Cancel</button>
-                <button class="Submit" onclick="onSubmit()">Submit</button>
-                <!-- <button class="History" onclick="loadDoc()">History -->
-                <!-- </button> -->
+                <button class="Submit">Submit</button>
+              
             </div>
 
         </div>
@@ -70,12 +70,12 @@
     </form>
     <div class="table_list">
         <h1>List of Employees</h1>
-        <button onclick="loadDoc()">List of Employees</button>
+        <button onclick="add_employee()">List of Employees</button>
         <table id="table_id">
         </table>
     </div>
     <script src="table_script.js"></script>
-    <script src="index_script.js"></script>
+    <!-- <script src="index_script.js"></script> -->
 </body>
 
 </html>

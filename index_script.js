@@ -1,4 +1,0 @@
-function onSubmit()
-{
-    alert("Hey");
-}
